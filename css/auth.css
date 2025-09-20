@@ -1,0 +1,132 @@
+/* 
+* Home Made Products - Authentication Styles
+* This file contains styles specific to login and registration pages
+*/
+
+/* Text alignment utility */
+.text-center {
+    text-align: center;
+}
+
+/* Margin utilities */
+.mt-4 {
+    margin-top: 1rem;
+}
+
+/* Auth tabs improvements */
+.auth-tab {
+    text-decoration: none;
+    color: inherit;
+}
+
+.auth-tab:hover {
+    color: var(--primary-color);
+}
+
+/* Terms checkbox styling */
+.terms {
+    margin-bottom: var(--spacing-md);
+}
+
+.terms input {
+    margin-top: 4px;
+}
+
+.terms label {
+    font-size: var(--small-size);
+    margin-left: var(--spacing-xs);
+}
+
+/* Notification system */
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+}
+
+.notification {
+    background-color: white;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInRight 0.3s ease forwards;
+}
+
+.notification.fade-out {
+    animation: fadeOutRight 0.3s ease forwards;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.notification.success {
+    border-left: 4px solid #4CAF50;
+}
+
+.notification.error {
+    border-left: 4px solid #F44336;
+}
+
+.notification.info {
+    border-left: 4px solid #2196F3;
+}
+
+.notification.success i {
+    color: #4CAF50;
+}
+
+.notification.error i {
+    color: #F44336;
+}
+
+.notification.info i {
+    color: #2196F3;
+}
+
+.notification-close {
+    background: none;
+    border: none;
+    color: var(--medium-gray);
+    cursor: pointer;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.notification-close:hover {
+    color: var(--dark-gray);
+}
+
+@keyframes fadeOutRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+}
+
+/* Password strength improvements */
+.strength-segment.weak {
+    background-color: #F44336;
+}
+
+.strength-segment.medium {
+    background-color: #FFC107;
+}
+
+.strength-segment.strong {
+    background-color: #4CAF50;
+}
