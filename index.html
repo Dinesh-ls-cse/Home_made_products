@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Made Products - Artisanal Marketplace</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Home Made Products Logo">
+                <h1>Home Made Products</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="track_order.php">Order Status</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icons">
+                <a href="login.html" class="icon-link"><i class="fas fa-user"></i></a>
+                <a href="cart.html" class="icon-link cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="animate-fade-in">Discover Unique Handcrafted Products</h2>
+                <p class="animate-fade-in-delay">Support local artisans and find one-of-a-kind treasures</p>
+                <a href="products.html" class="btn primary-btn animate-fade-in-delay-2">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse Categories</h2>
+            <div class="category-grid">
+                <div class="category-card animate-on-scroll">
+                    <img src="images/categories/handcrafted.jpg" alt="Handcrafted Items">
+                    <h3>Handcrafted</h3>
+                    <a href="products.html?category=handcrafted" class="category-link">Explore</a>
+                </div>
+                <div class="category-card animate-on-scroll">
+                    <img src="images/categories/organic-food.jpg" alt="Organic Foods">
+                    <h3>Organic Foods</h3>
+                    <a href="products.html?category=organic" class="category-link">Explore</a>
+                </div>
+                <div class="category-card animate-on-scroll">
+                    <img src="images/categories/jewelry.jpg" alt="Jewelry">
+                    <h3>Jewelry</h3>
+                    <a href="products.html?category=jewelry" class="category-link">Explore</a>
+                </div>
+                <div class="category-card animate-on-scroll">
+                    <img src="images/categories/home-decor.jpg" alt="Home Decor">
+                    <h3>Home Decor</h3>
+                    <a href="products.html?category=home-decor" class="category-link">Explore</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <!-- Product cards will be dynamically loaded from JS -->
+            </div>
+            <div class="view-more">
+                <a href="products.html" class="btn secondary-btn">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Become a Seller -->
+    <section class="become-seller">
+        <div class="container">
+            <div class="seller-content">
+                <h2>Have Handmade Products to Sell?</h2>
+                <p>Join our community of artisans and reach customers who value handcrafted quality.</p>
+                <!-- <a href="" class="btn primary-btn">Become a Seller</a> -->
+            </div>
+            <div class="seller-image">
+                <img src="images/become-seller.jpg" alt="Artisan working">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Home Made Products Logo">
+                    <h3>Home Made Products</h3>
+                    <p>Connecting artisans with customers since 2023</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+                    </ul>
+                </div>
+                <div class="footer-categories">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="products.html?category=handcrafted">Handcrafted</a></li>
+                        <li><a href="products.html?category=organic">Organic Foods</a></li>
+                        <li><a href="products.html?category=jewelry">Jewelry</a></li>
+                        <li><a href="products.html?category=home-decor">Home Decor</a></li>
+                        <li><a href="products.html?category=clothing">Clothing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for new products and special offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Home Made Products. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
